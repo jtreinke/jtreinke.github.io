@@ -1,13 +1,35 @@
 html{ font-family:'Maven Pro', sans-serif;}
-body{background-color: pink;
-  }
+body{background-color:#B2CCFF;
+}
 #title{
   color:#3333FF;
   font-size:24px;
+  text-align:center;
 }
 
 #intro{
-  color:black;}
+  color:black;
+  text-align:center;
+}
+
+#regions li{
+  border:1px solid red;
+  text-align:center;
+  font-weight: bold;
+  list-style-type: none;
+  width: 200px
+}  
+
+.homestyle{
+  display:inline;
+  text-align:center;
+  text-decoration:none;
+  }
+
+
+
+
+
 
 
 
