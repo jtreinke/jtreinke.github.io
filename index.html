@@ -6,7 +6,7 @@
 	<link href="sheets.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	
 	<title>Three Sheets to the Wind</title>
   </head>
   <body>
@@ -22,8 +22,12 @@
 	  <li>Africa</li>
 	</ul>
   </div> 
-  <div id="map"></div>
-  var map = L.map('map').setView([51.505, -0.09], 13); 
+  <div id="map">
+  	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js">
+  		 var map = L.map('map').setView([51.505, -0.09], 13); 
+  	</script>
+  </div>
+ 
   <div id="links" align="center">
 	<div class="homestyle">
 	<div class="homestyle" style="align:center"><a href="index.html">Home</a></div>
