@@ -101,9 +101,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
-
+/*
 #headerwrap {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/brick.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 0px;
 	text-align:center;
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
 }
-
+*/
 
 /*#workwrap {	
 	background: url(../img/work.jpg) no-repeat center top;
@@ -159,6 +159,27 @@ h1, h2, h3, h4, h5, h6 {
 	color: #ffffff
 }
 */
+#heading{
+	margin-top: 55px;
+
+}
+#brick img{
+	z-index: -18;
+}
+
+#name{
+	z-index: 7;
+	margin-top:-600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 500px;
+	font-size: 60px;
+	font-family:Lato;
+	font-weight:700;
+	color:#e3d9d7;
+	text-align: center;
+}
+
 #aboutwrap {	
 	background: url(../img/about.jpg) no-repeat center top;
 	margin-top: -70px;
@@ -330,8 +351,8 @@ a.external:active { color:#333; text-decoration:none;}
   opacity: .7;
   text-decoration: none;
 }
-#resume2{
-	
+
+#resume2{	
 
 }
 /* Gallery */
