@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: -18;
 }
 
-#name{
+/*#name{
 	z-index: 7;
 	margin-top:-580px;
 	margin-left: auto;
@@ -181,9 +181,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight:700;
 	color:#29232c;
 	background-color: white;
-	text-align: center;
-}
-
+	text-align: center;*/
+/*}
+*/
 #aboutwrap {	
 	background: url(../img/about.jpg) no-repeat center top;
 	margin-top: -70px;
