@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about_text{
 	font-family:'Georgia';
-	font-size:14px;
+	font-size:15px;
 	padding-top: 15px;
 	padding-right: 10px;
 	padding-bottom: 15px;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 .project_title{
 	font-family:lato;
 	font-weight: 700;
-	font-size:14px;
+	font-size:15px;
 	text-align: center;
 	padding-top:10px;
 }
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: auto;
 	font-family:Georgia;
 	font-weight:200;
-	font-size: 13px;
+	font-size: 14px;
 	text-align:center;
 	position:right;
 }
@@ -275,10 +275,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-a.external:link { color:#333; text-decoration:none;}
-a.external:visited { color: #333; text-decoration:none;}
+a.external:link { color:#388d80; text-decoration:none;}
+a.external:visited { color: #388d80; text-decoration:none;}
 a.external:hover { color:#1abc9c; text-decoration:none;}
-a.external:active { color:#333; text-decoration:none;}
+a.external:active { color:#388d80; text-decoration:none;}
 
 /*for the about me page*/
 a.info:link { color:#333; text-decoration:none; font-weight:bold}
@@ -427,7 +427,6 @@ padding-bottom: 5px;
 	margin-right:60%;
 
 }
-
 /* Gallery */
 /*.gallery {
 	margin-top: 30px;
