@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #name{
 	z-index: 7;
-	margin-top:-575px;
+	margin-top:-580px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 500px;
@@ -224,6 +224,14 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 15px;
 }
 
+.about_me{
+	font-family:'Georgia';
+	font-size:15px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
 /*#jp{
 	z-index: -100;
 	float:right;
@@ -271,6 +279,12 @@ a.external:link { color:#333; text-decoration:none;}
 a.external:visited { color: #333; text-decoration:none;}
 a.external:hover { color:#1abc9c; text-decoration:none;}
 a.external:active { color:#333; text-decoration:none;}
+
+/*for the about me page*/
+a.info:link { color:#333; text-decoration:none; font-weight:bold}
+a.info:visited { color:#29232c; text-decoration:none;}
+a.info:hover { color:#1abc9c; text-decoration:none;}
+a.info:active { color:#29232c; text-decoration:none;}
 
 
 #balzac{
@@ -389,7 +403,7 @@ padding-bottom: 5px;
 .btn {
   margin-right: auto;
   margin-left: auto;
-  background: #1abc9c;
+  background: #388d80;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -398,17 +412,22 @@ padding-bottom: 5px;
   font-size: 16px;
   padding: 11px 10px 10px 10px;
   text-decoration: none;
+  border-color: #388d80;
 }
 
 .btn:hover {
-  background: #1abc9c;
+  background: #388d80;
   opacity: .7;
   text-decoration: none;
 }
 
-#resume2{	
+#resume{	
+	margin-top: 15px;
+	margin-left: 40%;
+	margin-right:60%;
 
 }
+
 /* Gallery */
 /*.gallery {
 	margin-top: 30px;
