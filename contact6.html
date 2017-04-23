@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    <title>JTR</title>
+</head>
+
+
+
+<!-- START HERE -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+ 
+   <link rel="stylesheet" href="assets/css/contact_style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+      <link href="assets/css/style.css" rel="stylesheet">
+  <body >
+
+
+     <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(255, 255, 255, 0.8);">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">J. T. REINKE</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" >
+            <li><a href="index.html#works">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact6.html">Contact</a></li>  
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<div class="container" id="contact_container">
+  <div class="row center mt mb">
+    <div class="col-lg-4 col-md-4 col-sm-2" id="legend_container">
+       <img src="assets/img/portfolio/legend.png" id="legend" alt="Legend">
+    </div>
+      <div class="col-lg-1 col-md-2 col-sm-6"></div>
+    <div class="col-lg-6 col-md-5 col-sm-4" id="form">
+      <form id="gform" method="POST" class="pure-form pure-form-stacked"
+        action="https://script.google.com/macros/s/AKfycbxJJWFsAz1STlsNvX7arCryOP76IpLNWHmstu3yOPipNV0fXgE/exec">
+          <!-- change the form action to your script url --> 
+
+        <h3 style="color:#ed975c;">Contact Form</h3>
+        <fieldset class="pure-group">
+          <input id="name" name="name" placeholder="Your Name" type="text" tabindex="1" required/>
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <input id="email" name="email" type="email" tabindex="2" value=""
+          required placeholder="Your Email Address"/>
+          <span id="email-invalid" style="display:none">
+            Must be a valid email address</span>
+        </fieldset>
+        
+        <fieldset class="pure-group">
+          <input id="telephone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+        </fieldset>
+        
+        <fieldset class="pure-group">
+          <input id="website" placeholder="Your Web Site (optional)" type="url" tabindex="4">
+        </fieldset>
+
+        <fieldset class="pure-group">
+          <textarea id="message" name="message" rows="10" tabindex="5" required 
+          placeholder="What's on your mind..."></textarea>
+        </fieldset>
+
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+      </form>
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <p>Thanks</em> for reaching out!</p>
+      </div>
+   </div>
+    <div class="col-lg-0 col-md-1 col-sm-0"></div>
+   </div>
+</div>
+
+			</div>
+		</div>
+
+		</div><! --/row -->
+	</div><! --/container -->
+
+			
+			</div><! --/row -->
+		</div><! --/container -->
+	</div><! --/social -->
+
+  <div id="footerwrap" id="contact_footer">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-4 col-md-6 col-sm-6" style="display:inline-block;">
+        Copyright 2015. Jennifer T. Reinke
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4" style="display:inline-block;">
+         <a href="https://www.linkedin.com/in/jtreinke/"><i class="fa fa-linkedin"></i></a>
+        </div>
+          <div class="col-lg-4 col-md-2 col-sm-2" style="display:inline-block;">
+         <a href="https://www.linkedin.com/in/jtreinke/"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div><! --/footerwrap -->
+  
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+<!--   <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+
+  <script data-cfasync="false" type="text/javascript"
+  src="assets/js//form-submission-handler.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+<!-- END -->
+
+</body>
+</html>

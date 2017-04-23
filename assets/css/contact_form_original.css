@@ -1,0 +1,39 @@
+body {
+  margin: 2em;
+}
+
+
+textarea {
+  width: 100%;
+}
+fieldset{
+  width:100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-success{
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background:#4fadad;
+  padding:5px;
+  width:100%;
+  margin: auto auto;
+
+}
+.button-xlarge {
+  font-size: 125%;
+}
+
+#name, #email, #telephone, #website{
+  width:100%;
+}

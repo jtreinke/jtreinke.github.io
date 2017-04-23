@@ -1,0 +1,36 @@
+body {
+ /* margin: 2em;*/
+}
+
+#form{
+  margin-top:0px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  /*background-color:#f6f6f6; *//*this is grey*/
+  border: 2px solid #2f2f2f;
+}
+textarea {
+  width: 100%;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.button-success {
+  color: white;
+  width:100%;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #4fadad; /* this is a teal */
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  align:center;
+}
+#name, #email, #telephone, #website{
+  width: 100%;
+}

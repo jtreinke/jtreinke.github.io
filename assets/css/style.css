@@ -13,9 +13,7 @@
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
-@import url(https://fonts.googleapis.com/css?family=Merriweather:200, 400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600i,700,700i|Playfair+Display:400,400i,700,700i');
 
 
 ::-moz-selection {
@@ -48,11 +46,11 @@
 }
 
 .mt {
-	margin-top: 80px;
+	margin-top: 0px;
 }
 
 .mb {
-	margin-bottom: 80px;
+	margin-bottom:0px;
 }
 
 /* ==========================================================================
@@ -61,26 +59,29 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-
+    font-color:#2d2d2f;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
 }
-
+*/
 
 .navbar-brand {
 	font-weight: 700;
+
 }
 
 .navbar-default .navbar-brand {
-	color: #0e4e52;
+	color: #2d2d2f;
+	font-size:38px;
+	font-family: 'Playfair Display', serif;
+	font-weight:700;
 }
 
 .navbar-default {
@@ -89,16 +90,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #0e4e52;
-	
+	color:#2d2d2f;
 	background-color: transparent;
-	border-bottom: 2px solid #0e4e52;
+	border-bottom: 2px solid #2d2d2f;v
 }
 
 .navbar-default .navbar-nav > li > a {
-	font-family: lato;
-	font-weight: bold;
-	color: #0e4e52;
+	font-family:'Playfair Display', serif;
+	font-weight: 700;
+	color: #2d2d2f;
+	font-size:18px;
 }
 
 /* ==========================================================================
@@ -170,6 +171,17 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: -18;
 }
 
+#brick{
+  width:100%;
+  margin-top:90px;
+  margin-bottom:0px;
+}
+
+#chevron{
+	color:#2d2d2f;
+	font-size:50px;
+}
+
 /*#name{
 	z-index: 7;
 	margin-top:-580px;
@@ -205,6 +217,15 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+ ABOUT ME SECTION
+
+--------------------------------------------------------------------------------------------------------------------*/
+
 #paris { 
 	background-image: url(../img/mugshotwithparis.png);
 	background-repeat: no-repeat;
@@ -216,20 +237,46 @@ h1, h2, h3, h4, h5, h6 {
     width: 250px;
 }
 
-.about_text{
-	font-family:'Georgia';
-	font-size:15px;
-	padding-top: 15px;
-	padding-right: 10px;
-	padding-bottom: 15px;
+#map_bgrd{
+  background-image: url(../img/paris2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+         
 }
 
+
+#Me{
+	padding-left:40px;
+	margin-left:0px;
+	padding-right:60px;
+}
+
+@media screen and (min-width: 1200px) {
+ #Me {margin-left: 70px;}
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+ #Me {margin-left: 23%;}
+}
+
+@media screen and (min-width: 451px) and (max-width: 550px){
+ #Me {margin-left: 17%;}
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px){
+ #Me {margin-left: 12%;}
+}
+
+
+
 .about_me{
-	font-family:'Georgia';
-	font-size:15px;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
 	padding-top: 10px;
 	padding-right: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
+	max-width:750px;
 }
 
 /*#jp{
@@ -237,84 +284,251 @@ h1, h2, h3, h4, h5, h6 {
 	float:right;
 }*/
 
+@media (max-width: 993px) {
+#headerwrap{margin-top:50px;}
+}
+
+
 /* start of portfolio page*/
 #portfolio{
-	font-family:Lato;
+	font-family:'Playfair Display', serif;
 	font-weight:700;
-	font-size:20px;
+	font-size:25px;
 	text-align:center;
 }
 
 .project_title{
-	font-family:lato;
+	font-family:'Playfair Display',serif;
 	font-weight: 700;
-	font-size:15px;
+	font-size:20px;
 	text-align: center;
 	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .project_text{
-	width:250px;
+	/*width:300px;*/
+	height:70px;
 	margin-top:-10px;
-	margin-bottom: 25px;
+/*	margin-bottom: 20px;*/
 	margin-left: auto;
 	margin-right: auto;
-	font-family:Georgia;
-	font-weight:200;
-	font-size: 14px;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	font-size: 16px;
 	text-align:center;
-	position:right;
+/*	position:right;*/
+	padding-top: 7px;
+	padding-left:5px;
+	padding-right:5px;
 }
+
+#TextImage_block{
+	margin-top: 14% !important;
+
+}
+
+#about_TextImage_block{
+		margin-top: 14% !important;
+		padding-right:0px;
+		margin-right:0px;
+		overflow-x: hidden;
+}
+
+
+
+p.project_title a{
+	color:#2d2d2f;
+	text-decoration: none;
+}
+
+p.project_title a:hover{
+	opacity: .7;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------
+SUB-PAGE PORTFOLIO
+
+--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*headers on the sub projct pages themselves. I wanted them to be smaller*/
+p.projectPage_title {
+	color:#2d2d2f;
+	font-size:20px;
+	font-family: 'Open sans', helvetica, sans-serif;
+	font-weight: 600;
+}
+
+p.projectPage_text {
+	color:#2d2d2f;
+	font-size:18px;
+	font-family: 'Open sans', helvetica, sans-serif;
+	font-weight: 400;
+}
+
+.about_text{
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+}
+
+
 
 .software{
-	font-family:georgia;
-	font-weight: bold;
-	font-size: 14px;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	color:#454546;
+}
+
+#footerwrap{
+	font-weight: 400;
+	background-color:#2d2d2f; 
+	color:#4fadad; 
+	font-size:16px;
+	padding:30px;
+
+}
+
+#contact_footer{
+	margin-top: 50px;
+	vertical-align: bottom;
+	position: absolute;
+}
+
+#contact_container{
+	margin-top: 150px;
+	}
+
+#all_container{
+	margin-top:150px;
+	margin-bottom: 70px;
+}
+
+#legend_container{
+	height:600px;
+
+
+}
+@media (min-width: 993px){
+#legend{width:500px; margin-top:20%;padding-right:20px;}
+}
+
+@media (min-width: 786px){
+#legend{width:450px; margin-top:20%;margin-right:200px;}
+#legend_container{height:450px;}
 }
 
 
-a.external:link { color:#388d80; text-decoration:none;}
-a.external:visited { color: #388d80; text-decoration:none;}
-a.external:hover { color:#1abc9c; text-decoration:none;}
-a.external:active { color:#388d80; text-decoration:none;}
+@media (max-width: 600px){
+#legend{width:480px; margin-top:10%; margin-right:auto; margin-left: auto;}
+#legend_container{height:450px;}
+}
+
+#thankyou_message{
+	font-family:'Open Sans', helvetica, sans-serif;
+	color:#ed975c;
+	text-align:center;
+	align:center;
+	font-size:25px;
+	padding: 20px;
+	margin:100px;
+
+}
+
+a.external:link { color:#4fadad; text-decoration:none;}
+a.external:visited { color: #4fadad; text-decoration:none;}
+a.external:hover { color:#a5544d; text-decoration:none;}
+a.external:active { color:#4fadad; text-decoration:none;}
 
 /*for the about me page*/
-a.info:link { color:#333; text-decoration:none; font-weight:bold}
-a.info:visited { color:#29232c; text-decoration:none;}
-a.info:hover { color:#1abc9c; text-decoration:none;}
-a.info:active { color:#29232c; text-decoration:none;}
+a.info:link { color:#454546; text-decoration:none;}
+a.info:visited { color:#454546; text-decoration:none;}
+a.info:hover { color:#4fadad; text-decoration:none;}
+a.info:active { color:#454546; text-decoration:none;}
 
 
+
+
+/* ------------------------SCREEN IMAGES FOR PROJECTS------------------------------------------*/
+
+/*LEFT COLUMN  */
 #balzac{
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
-#joypain{
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#mhapo{
+#balzac3{
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom:70px;
+	
 }
 
 #georef{
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
-#smell{
-	margin-top: 45px;
+
+/**/
+#joypain{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
 }
-/*#fall{
+
+@media (max-width: 767px) {
+#joypain img{margin-left:auto; margin-right:auto;}
+
+}
+/*RIGHT COLUMN*/
+#holiday{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mhapo{
+	margin-top:-15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#smell{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-5px!important;
+}
+
+
+#smell_sub{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	
+}
+
+@media (min-width: 993px) {
+#smell_sub {margin-top:-85px;}
+}
+
+
+#fall{
 	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
-}*/
+}
+
 #falltop{
 	margin-top: 0px;
 	margin-left: auto;
@@ -340,30 +554,42 @@ padding-bottom: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #dustJacket{
 	margin-top: 0px;
 }
 
-#book{
+@media (max-width: 767px) {
+#dustJacket img{margin-left:auto; margin-right:auto;}
+}
+
+/*#book{
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 #dada{
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom:40px;
 }
 
 .margin{
 	margin-left: auto;
 	margin-right: auto;
+	padding-right: 0px;
 }
 
 #roadmap_top{
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom:50px;
 }
 
+@media (min-width: 993px) {
+#roadMap{margin-top:-30px;}
+#bike{margin-top:40px;}
+}
 
 #wetland2{
 	margin-left: auto;
@@ -381,52 +607,71 @@ padding-bottom: 5px;
 	margin-right: auto;
 }
 
+@media (max-width: 767px) {
+#CTU img{margin-left:auto; margin-right:auto;}
+
+
+}
+
 #richter{
-	margin-top: 0px;
-
+	margin-left: auto;
+	margin-right: auto;	
 }
 
-#illuminated{
-	margin-top: 0px;
+
+#SOA{
+	margin-left: auto;
+	margin-right: auto;	
 }
 
-#illuminated2{
+
+@media (max-width: 767px) {
+#SOA img{margin-left:auto; margin-right:auto;}
+
+/*
+@media (min-width:; 768px) and (max-width: 992px) {
+#
+}
+
+@media (min-width: 993px) {
+#richter{margin-top: 40px !important;}
+
+}*/
+
+#bike img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bike_all{
+	margin-top:150px!important;
+}
+
+#illuminated img{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 767px) {
+#illuminated img{margin-left:auto; margin-right:auto;}
+}
+
+
+#illuminated2 img{
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #tree{
-	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-
-.btn {
-  margin-right: auto;
-  margin-left: auto;
-  background: #388d80;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Georgia;
-  color: #ffffff;
-  font-size: 16px;
-  padding: 11px 10px 10px 10px;
-  text-decoration: none;
-  border-color: #388d80;
+#tree2{
+	padding-bottom: 20px;
 }
 
-.btn:hover {
-  background: #388d80;
-  opacity: .7;
-  text-decoration: none;
-}
-
-#resume{	
-	margin-top: 15px;
-	margin-left: 40%;
-	margin-right:60%;
-
-}
 /* Gallery */
 /*.gallery {
 	margin-top: 30px;
@@ -435,5 +680,4 @@ padding-bottom: 5px;
 	opacity: 0.7;
 	cursor: pointer;
 }
-
 
