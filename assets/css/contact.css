@@ -24,7 +24,8 @@ body {
 #gform input[type="text"], #gform input[type="email"], #gform input[type="tel"], #gform input[type="url"], #gform textarea, #gform button[type="submit"] { font:400 14px "Open Sans", Helvetica, Arial, sans-serif; }
 
 
-	#contact {
+
+#contact {
 	padding:25px;
 	margin:0px 0;
 	}

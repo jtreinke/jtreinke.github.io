@@ -412,7 +412,7 @@ p.projectPage_text {
 	margin-bottom: 70px;
 }
 
-#legend_container{
+/*#legend_container{
 	height:600px;
 
 
@@ -430,7 +430,7 @@ p.projectPage_text {
 @media (max-width: 600px){
 #legend{width:480px; margin-top:10%; margin-right:auto; margin-left: auto;}
 #legend_container{height:450px;}
-}
+}*/
 
 #thankyou_message{
 	font-family:'Open Sans', helvetica, sans-serif;
