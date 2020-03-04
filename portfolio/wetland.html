@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <link rel="icon" href="../images/jr_favIcon.png" type="image/gif" sizes=>
+ 
+    <title>Portfolio</title>
+
+    <!-- CSS-->
+    <!-- My Custom Styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS for Slider *Slider JS is at bottom of page -->
+    <link rel="stylesheet" href="../styles/jquery.bxslider.css">
+   
+    <style>
+    .bx-viewport{
+    
+      }
+    </style>
+  </head>
+
+  <body>
+
+<!-- Static navbar -->
+<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+<div id="myTopnav" id="home" class="topnav  sticky"  style="width:100%;">
+    <a id="jr_btn" class="navBtn"  href="../index.html" style="">Jennifer Reinke</a>
+    <div id="navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="../index.html#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="../index.html#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="../index.html#footer" style="">Contact</a>
+   </div>
+   <div id="mobile_navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="../index.html#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="../index.html#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="../index.html#footer" style="">Contact</a>
+   </div>
+    <a id="toggleIcon" class="navBtn icon"><i class="fa fa-bars"></i></a>
+  </div>
+  <!--End navbar-->
+  </div><!-- Closing of entire screen section/Div Top-->
+  <div class="project_container">
+  <div class="row">
+    <div class="project_contained">
+      <!--The Blank Computer Screen Must Be Above-->
+      <div id="div-top" class="screen_section">
+      <img src="../images/projects/computer_screen_blank.png" id="balzac" style="width:100%; height:100%;">
+
+      <!-- The project images that will slide on the screen-->
+      <div id="screen">
+          <div id="div-bottom" class="bxslider" style="z-index:-11;">
+            <div>
+              <img src="../images/projects/wetland_1987_2000_v2.png" alt="1" class="portImages" style="max-width:498px; padding-left:50px; height:auto; left:0px; padding-top:1%;">
+            </div>
+            <div>
+              <img src="../images/projects/wetland_2000_2010_v2.png" alt="2" class="portImages" class="img-responsive" style="max-width:485px; height:auto; left:0px; padding-left:50px; padding-top:2%;">
+            </div>
+            <div>
+              <img src="../images/projects/wetland_1987_2010_v2.png" alt="3" class="portImages" class="img-responsive" style="max-width:498px; height:auto;left:0px; padding-left:50px; padding-top:2%;">
+            </div>
+          </div>
+        </div>
+  </div><!-- Closing of entire screen section/Div Top-->
+
+      <!--Project Text Description-->
+      <div class="project_description" style="display:inline-block;">
+          <p class="projectPage_title">Louisiana Coastal Wetland Loss</p>
+          <p class="projectPage_subhead">Remote Sensing Project</p>
+          <p class="projectBody_text">
+          <b class="typo">The objective of the remote sensing project was</b> to quantify wetland loss in the Louisiana coastal region between 1987 and 2010 using Landsat 5 satellite images, as well as NAIP aerial images for classification accuracy assessments. We determined the net loss by examining a mosaic of four Landsat images for each of the three study years in the month of October. To examine whether the rate of wetland loss has increased or decreased, we generated three change maps: 1987-2000, 2000-2010, and 1987-2010 and calculated The map represents the transformation of the coastal wetlands over a twenty-three year period.
+          <br><br>
+
+          <span class="software">Software:</span> ERDAS Imagine & Esri ArcMAP for Desktop</p><br>
+          </p>
+      </div><!--END of Project description-->
+      </div><!--END of contained-->
+    </div><!-- END of row-->
+</div><!-- END of container-->
+</div>
+</div>
+</div>
+
+ <!-- Footer Section-->
+  <div id="footer">
+    <div id="arrow"><i class="up"></i></div>
+    <p class="copyright">&copy; 2020 | Jennifer Reinke</p>
+  </div>
+<!-- End Footer Section-->
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../scripts/jquery.bxslider.js"></script>  
+    <script src="../scripts/navbar.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+
+      });
+      
+      $('.bxslider').bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 4000
+      });
+
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

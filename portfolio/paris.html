@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <link rel="icon" href="../images/jr_favIcon.png" type="image/gif" sizes=>
+    <title>Portfolio</title>
+
+    <!-- CSS-->
+    <!-- My Custom Styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS for Slider *Slider JS is at bottom of page -->
+    <link rel="stylesheet" href="../styles/jquery.bxslider.css">
+    
+  </head>
+
+<body>
+<!-- Static navbar -->
+<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+<div id="myTopnav" id="home" class="topnav  sticky"  style="width:100%;">
+    <a id="jr_btn" class="navBtn"  href="../index.html" style="">Jennifer Reinke</a>
+    <div id="navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="../index.html#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="../index.html#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="../index.html#footer" style="">Contact</a>
+   </div>
+   <div id="mobile_navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="../index.html#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="../index.html#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="../index.html#footer" style="">Contact</a>
+   </div>
+    <a id="toggleIcon" class="navBtn icon"><i class="fa fa-bars"></i></a>
+  </div>
+  <!--End navbar-->
+
+<div class="project_container">
+  <div class="row">
+    <div class="project_contained">
+      <!--The Blank Computer Screen Must Be Above-->
+      <div id="div-top" class="screen_section">
+      <img src="../images/projects/computer_screen_blank.png" id="balzac" style="width:100%; height:100%;">
+
+      <!-- The project images that will slide on the screen-->
+      <div id="screen">
+          <div id="div-bottom" class="bxslider" style="z-index:-11;">
+            <div id="balzac1">
+              <img src="../images/projects/balzac1.jpg" alt="1" style="width:100%; height:auto; left:0px; padding-top:2%;">
+            </div>
+            <div>
+              <img src="../images/projects/balzac2.jpg" alt="2" class="img-responsive" style="width:100%; height:auto; left:0px;padding-top:2%;">
+            </div>
+            <div>
+              <img src="../images/projects/balzac3.jpg" alt="3" class="img-responsive" style="width:100%; height:auto;left:0px;padding-top:2%;">
+            </div>
+          </div>
+        </div>
+	</div><!-- Closing of entire screen section/Div Top-->
+
+
+      <!--Project Text Description-->
+      <div class="project_description" style="display:inline-block;">
+          <p class="projectPage_title">Mapping Balzac's Paris</p>
+          <p class="projectPage_subhead">Explored the Social Topography of 19th Century Paris</p>
+          <p class="projectBody_text">
+          <b class="typo">Through my graduate assistant position</b> at the John R. Borchert Map Library, I was responsible for mapping geographic sites in Paris, referenced in three Balzac novels to detect patterns and decipher the subtext of the chosen localities. I datamined French versions of <i>The Magic Skin, Father Goriot,</i> and<i> Lost Illusions,</i> to identify geographic plot points and proceeded to geocode the place names and georeference a digital copy of an 1814 map of Paris.
+          <br><br>
+          I created an interactive web map to visualize key elements regarding the social topography of Balzac’s Paris, to assist students with understanding French literature as well as this historical period beyond what they might grasp through text analysis alone. Through graphic communication, this project examplifies how mapping can prove useful when learning about literature and culture.<a href="http://jtreinke.github.io/balzac/" target="_blank" class="external"> View<i> Mapping Balzac's Paris'</i> progress here!</a>
+          <br><br>
+          <span class="software">Software:</span> Taporware, Voyant-Tools, HTML, CSS, ESRI/Leaflet API, ArcGIS for Desktop, ArcGIS for Server, and GitHub
+          </p>
+      </div><!--END of Project description-->
+      </div><!--END of contained-->
+		</div><!-- END of row-->
+</div><!-- END of container-->
+</div>
+</div>
+</div>
+
+ <!-- Footer Section-->
+  <div id="footer">
+    <p class="copyright">&copy; 2020 | Jennifer Reinke</p>
+  </div>
+<!-- End Footer Section-->
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../scripts/jquery.bxslider.js"></script>  
+    <script src="../scripts/navbar.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+
+      });
+      
+      $('.bxslider').bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 4000
+      });
+
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+    </script>
+  </body>
+</html>
