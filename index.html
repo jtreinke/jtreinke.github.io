@@ -1,218 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <!-- <link rel="shortcut icon" href="assets/ico/favicon.ico"> -->
+    <title>Portfolio</title>
 
-    <title>JTR</title>
+    <!--Style sheets-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/jr_favIcon.png" type="image/gif" sizes=>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+<body>
+<!-- Static navbar -->
+<!-- The link with class="icon" is used to open and close the topnav on small screens. -->
+<div id="myTopnav" id="home" class="topnav  sticky"  style="width:100%;">
+  	<a id="jr_btn" class="navBtn"  href="#" style="text-transform:uppercase;">Jennifer Reinke</a>
+    <div id="navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="#footer" style="">Contact</a>
+   </div>
+   <div id="mobile_navWrapper">
+      <a id="portfolio_btn" class="navBtn" href="#grid" style="">Portfolio</a>
+      <a id="about_btn" class="navBtn" href="#anchor_padding" style="">About</a>
+      <a id="footer_btn" class="navBtn" href="#footer" style="">Contact</a>
+   </div>
+    <a id="toggleIcon" class="navBtn icon"><i class="fa fa-bars"></i></a>
+</div>
+  <!--End navbar-->
+  <div id="heading">
+  	<img src="images/hero_1024x728_2-01-01.png" alt="splash image"/>
+  </div>
+<!--END OF HEADER SECTION-->
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- MAIN/ Portfolio Gallery Grid -->
+<!--Added pading to "works" div because the sticky nav blocks the filter buttons when jumps down to grid portfolio-->
+<div id="grid" class="section_header">Portfolio</div>
+<div class="section_line"><u>__________</u></div>
+<div class="main" id="works" class="stickyContent">
+<div id="myBtnContainer" align="center">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('dev')"> Developmnt</button>
+  <button class="btn" onclick="filterSelection('gis')"> GIS</button>
+  <button class="btn" onclick="filterSelection('design')"> Design</button>
+</div>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(255, 255, 255, 0.8);">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">J. T. REINKE</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right" >
-            <li class="active"><a href="#works">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact6.html">Contact</a></li>  
-          </ul>
-        </div><!--/.nav-collapse -->
+<!--First Row-->
+<div class="row">
+  <div class="column dev">
+    <div class="content">
+      <div class="example">
+       <a href="portfolio/CL.html">
+          <img src="images/thumbnails/thumb_CL.png" alt="Internship" class="img-responsive" style="width:100%;">
+          <div class="fadedbox">
+            <div class="title text">
+              <h4 class="project_title">Carmichael Lynch<br>Internship</h4>
+              <p class="project_text">Developed Site for Summer Session</p>
+            </div>
+          </div>
+        </a>
       </div>
-    </div>
-
-	<div id="headerwrap">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12" id="heading">
-          <img src="assets/img/brick5.jpg" id="brick" class="img-responsive"/>
-        </div>
-      </div>
-  <!--     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center; bottom:50px;">
-          <a href="#works" id="chevron"><i class="fa fa-chevron-down"></i></a>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-        </div> -->
-		    </div>
-			</div><! --/row -->
-	    </div> <!-- /container -->
-	</div><! --/headerwrap -->
-  <section id="works"></section>
-   <div class="container">
-    <div class="row center mt mb">
-          <div class="col-lg-4 col-md-4 col-sm-4">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-             <p id="portfolio">Portfolio<br></p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4">
-          </div>
-    </div>
-    <div class="row center mt mb"><!--First Row-->
-      <!--LEFT column beginning-->
-       <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <div id="internship"><a href="CL.html"><img src="assets/img/cl_int_1.jpg" class="img-responsive"></a> 
-            <p class="project_title">Carmichael Lynch Internship</p></a>
-            <p class="project_text">Developed Internship Site for Summer Session</p>
-          </div>
-          
-          <div id="georef"><a href="georef.html"><img src="assets/img/georef_2017_1.jpg" class="img-responsive"></a>
-             <p class="project_title">1956 Twin Cities Mosaic</p>
-             <p class="project_text">Georeferenced Historical Aerial Images
-             </p>
-          </div>
-
-          <div id="wetland">
-            <a href="wetland.html"><img src="assets/img/wetland_1987_2010.jpg" class="img-responsive"></a>
-            <p class="project_title">Louisiana Coastal Wetland Loss</p>
-            <p class="project_text">Remote Sensing Project</p>
-          </div>
-
-
-          <div id="smell">
-            <a href="smell.html"><img src="assets/img/smellmap.jpg" class="img-responsive"></a>
-            <p class="project_title">Minneapolis Smell Map</p>
-            <p class="project_text">Pulling Scents from the Twittersphere</P>
-          </div>
-
-          <div id="open">
-            <a href="opendata.html"><img src="assets/img/opendata_2017.jpg" class="img-responsive"></a> 
-            <p class="project_title">Open Data Tracking</p></a>
-            <p class="project_text">Examined County-Level GIS Data</p>
-          </div>
-
-        <!--   <div id="book">
-            <a href="book_layout.html"><img src="assets/img/portfolio/book13.jpg" class="img-responsive"></a> 
-            <p class="project_title">Book Layout</p></a>
-            <p class="project_text"><i>The Canterbury Tales</i></p><br>
-          </div> -->
-
-          <!-- <div id="bike">
-            <a href="bike2.html"><img src="assets/img/portfolio/bikeCopy.jpg" class="img-responsive"></a>
-            <p class="project_title">Bike Rack Assessment</p>
-            <p class="project_text">Alternative Transportation Services Inventory</p>
-          </div>
- -->
-        <!--   <div id="richter"><a href="richter.html"><img src="assets/img/richter_2017.jpg" class="img-responsive"></a>
-            <p class="project_title">San Andreas Fault</p>
-            <p class="project_text">A Study of Spatial Distribution of Earthquakes</p>
-          </div> -->
-
-        </div>
-        <!-- LEFT column end-->
-
-        <!-- MIDDLE column beginning-->
-        <div class="col-lg-4 col-md-4 col-sm-4 gallery"><!--middle column-->
-        <!--   <div id="joypain"> <a href="joypain.html"><img src="assets/img/joypain_screen_1.jpg" class="img-responsive"></a>
-          <p class="project_title">Mapping of Joy & Pain</p>
-          <p class="project_text">Concept Development and <br>Landing Page
-          </p>
-          </div> -->
-
-              <div id="dustJacket"><a href="dustJacket.html"><img src="assets/img/dustjacket_photo_2017.jpg" class="img-responsive"></a>
-              <p class="project_title">The Canterbury Tales</p>
-              <p class="project_text">Illustrated and Typographic Dust Jackets</p>
-             </div>
-
-               <div id="roadMap"><a href="roadmap.html"><img src="assets/img/roadmap_2017.jpg" class="img-responsive"></a>
-                <p class="project_title">Arrowhead Region Road Map</p>
-                <p class="project_text">Generated Reference Map of Northeastern Minnesota for Navigation</p>
-              </div>
-
-              <div id="illuminated"><a href="illuminated.html"><img src="assets/img/illuminated_2017_solid.jpg"  class="img-responsive"></a>
-                <p class="project_title">Illuminated Contours</p>
-                <p class="project_text">Hand Drawn Map Project</p>
-              </div>
-            
-      </div>
-      <!-- MIDDLE column end-->
-
-        <!--RIGHT column beginning-->
-      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-      
-          <div id="balzac"><a href="paris.html"><img src="assets/img/paris_2017_1.jpg" class="img-responsive"></a> 
-            <p class="project_title">Mapping Balzac's Paris</p></a>
-            <p class="project_text">Exploration of the Social Topography of 19th Century Paris</p>
-          </div>
-        
-          <div id="mhapo"><a href="mhapo.html"><img src="assets/img/mhapo_2017_1.jpg" class="img-responsive" class="gallery"></a> 
-            <p class="project_title">MHAPO</p>
-            <p class="project_text">Historical Aerial Indexing<br> of Minneapolis</P>
-            <p> </p>
-          </div>
-
-          <div id="tree"><a href="tree.html"><img src="assets/img/tree_ipad.jpg" class="img-responsive"></a>
-            <p class="project_title">Tree Inventories</p>
-            <p class="project_text">Emerald Ash Borer Risk Assessment</p>
-          </div>
-
-
-        
-        <!--   <div id="dada">
-            <a href="dada.html"><img src="assets/img/portfolio/dada.jpg" class="img-responsive"></a>
-            <p class="project_title">Dada Spread</p>
-            <p class="project_text">Minion Pro Font Specimen</p>
-          </div> -->
-
-      </div><!--RIGHT column ending-->
     </div>
   </div>
-
-  <div id="footerwrap">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-4 col-md-6 col-sm-6" style="display:inline-block;">
-        Copyright 2015. Jennifer T. Reinke
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4" style="display:inline-block;">
-         <a href="https://www.linkedin.com/in/jtreinke/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        </div>
-          <div class="col-lg-4 col-md-2 col-sm-2" style="display:inline-block;">
-         <a href="https://www.linkedin.com/in/jtreinke/" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
+  <div class="column dev gis">
+    <div class="content">
+      <div class="example">
+       <a href="portfolio/paris.html">
+          <img src="images/thumbnails/thumb_balzac.png" alt="Balzac" class="img-responsive" style="width:100%;">
+          <div class="fadedbox">
+            <div class="title text">
+              <h4 class="project_title">Mapping Balzac&#8217;s Paris</h4>
+              <p class="project_text">Explored the Social Topography of 19th Century Paris</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-  </div><! --/footerwrap -->
-  
+  </div>
+  <div class="column dev design">
+    <div class="content">
+      <div class="example">
+        <!--   <a href="portfolio/dandelion.html"> -->
+      	   <img src="images/thumbnails/thumb_dandelion.png" alt="Dandelion Animation" class="img-responsive" style="width:100%;">
+          <div class="fadedbox">
+            <div class="title text">
+            <!-- 	<h4 class="project_title">Dandelion</h4>
+            	<p class="project_text">Flash Animation</p> -->
+                <h4 class="project_title">Coming Soon</h4>
+              <p class="project_text">Flash Animation</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+<!--End First Row-->
+<!--Second Row-->
+  <div class="column gis">
+  	<div class="content">
+  	  <div class="example">
+      <a href="portfolio/wetland.html">
+    	    <img src="images/thumbnails/wetland_1987_2010.png" alts="Remote Sensing Project" class="img-responsive" style="width:100%;">
+    	  <div class="fadedbox">
+          <div class="title text">
+        		<h4 class="project_title">Louisiana Coastal<br>Wetland Loss</h4>
+        		<p class="project_text">Remote Sensing Project</p>
+      	 </div>
+        </div>
+      </a>
+    	</div>
+  	</div>
+  </div>
+  <div class="column design">
+    <div class="content">
+       <div class="example">
+    	    <a href="portfolio/dustJacket.html">
+            <img src="images/thumbnails/thumb_dustJacket.png" alt="Dustjackets" class="img-responsive" style="width:100%">
+	    	<div class="fadedbox">
+	        <div class="title text">
+	      		<h4 class="project_title">The Canterbury Tales</h4>
+	      		<p class="project_text">Illustrated Dust Jackets</p>
+	   		  </div>
+	   		</div>
+        </a>
+   	   </div>
+  	</div>
+  </div>
+  <div class="column gis">
+    <div class="content">
+    	<div class="example">
+   			<a href="portfolio/georef.html">
+          <img src="images/thumbnails/thumb_mosaic.png" alt="Georeferencing Project" class="img-responsive" style="width:100%;">
+   			<div class="fadedbox">
+	         <div class="title text">
+	      		 <h4 class="project_title">1956 Twin Cities Mosaic</h4>
+      			 <p class="project_text">Georeferenced Historical Aerial Images</p>
+	   		   </div>
+	   		</div>
+        </a>
+    	</div>
+    </div> 
+  </div>
+<!--End Second Row-->
+<!--Third Row-->
+  <div class="column gis">
+    <div class="content">
+        <div class="example">
+     	  <a href="portfolio/roadmap.html">
+          <img src="images/thumbnails/thumb_arrowhead.jpg" alt="Arrowhead Road Map" class="img-responsive" style="width:100%;">
+     	  <div class="fadedbox">
+	          <div class="title text">
+      			<h4 class="project_title">Arrowhead Region Road Map</h4>
+      			<p class="project_text">Generated Reference Map</p>
+      		  </div>
+      	  </div>
+          </a>
+      	</div>
+    </div>
+  </div>
+  <div class="column dev gis">
+  	<div class="content">
+  		<div class="example">
+    		<a href="portfolio/mhapo.html">
+            <img src="images/thumbnails/thumb_mhapo.png" alt="MHAPO Project" class="img-responsive" style="width:100%;"> 
+      		<div class="fadedbox">
+	          <div class="title text">
+     			    <h4 class="project_title">MHAPO</h4>
+      			  <p class="project_text">Historical Aerial Indexing</p>
+      		  </div>
+      		</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column gis">
+    <div class="content">
+    	<div class="example">
+   			<a href="portfolio/bike.html"><img src="images/thumbnails/thumb_bike.png" alt="Bike Assessment" class="img-responsive" style="width:100%;">
+   			<div class="fadedbox">
+	          <div class="title text">
+      		     <h4 class="project_title">Bike Rack Assessment</h4>
+     		       <p class="project_text">Transportation Services Inventory</p>
+     		   </div>
+     		</div>
+        </a>
+     	</div>	
+    </div>
+  </div>
+</div><!-- END GRID -->
+</div><!-- END MAIN -->
+<!-- Added this anchor div because the topnav covers face when jumps to this part of page, so need to counteract with spacing-->
+<div id="anchor_padding" style="min-height:70px;"></div>
+<!--About Section -->
+<div id="about_section">
+	  <div  id="about_bio" class="blocks">
+    <div class="section_header">About</div>
+    <div class="section_line"><u>__________</u></div>
+      <p class="about">
+        <b>Hello.</b> My name is Jennifer, part this, part that, based in Minneapolis. I develop front-end projects at Carmichael Lynch. I use my multidisciplinary background in geographic information systems, programming, and design to solve problems.
+        <br/><br/>
+        My focus is creating visual narratives to convey complex information to a broad audience. I love the intersection of data and design because there is a beauty in the way underlying elements like psychology, culture, and space intertwine enabling information exchange.
+        <br/><br/>
+        In my freetime, I’m a wannabe polyglot who loves a garden party. I value the innovation that comes through collaboration with others. If you’d like to connect with me on a project, to get in touch on <a href="https://www.linkedin.com/in/jtreinke" class="external" target="_blank">LinkedIn</a>, take a glimpse at my <a href="https://github.com/jtreinke" class="external" target="_blank">GitHub</a>.
+     </p>
+	  </div>
+    <div id="about_pic" class="blocks">
+      <img src="images/portraits/IMG_3816.jpg" id="me" alt="Portrait + Map"/ style="  justify-content: center;">
+    </div>
+</div>
+<!--END About Section -->
+
+<!-- Contact Section-->
+<div id="contact_section">
+  <div class="section_header">Contact</div>
+  <div class="section_line"><u>__________</u></div>
+    <p class="contact_spiel">
+      Want to know more about me or my work?<br>
+      Need help on a project?<br>
+      Have questions?<br>
+      Get in touch.
+    </p>
+    <div id="resume">
+     <a href="images/Reinke_Resume.PDF" target="_blank" role="button">R&eacute;sum&eacute;</a>
+    </div>
+    <div id="socialMedia">
+       <div id="linkedin" class="socialLinks" style="display:inline-block;">
+        	<a href="https://www.linkedin.com/in/jtreinke/" target="_blank">
+            <img src="images/linked.png" alt="LinkedIn" style=" width:32px; height:32px;">
+            </a>
+       </div>
+       <div id="instagram" class="socialLinks" style="display:inline-block;">
+           <a href="https://github.com/jtreinke" target="_blank">
+           <img src="images/github.png" alt="Instagram" style=" width:32px; height:32px;">
+           </a>
+        </div>
+        <div id="github" class="socialLinks" style="display:inline-block;">
+            <a href="https://www.instagram.com/enchantedsailor/"  target="_blank">
+            <img src="images/ig.png" alt="GitHub" style="width:32px; height:32px;">
+            </a>
+        </div>
+	  </div>
+</div>
+<!-- END CONTACT SECTION -->
+
+ <!-- Footer Section-->
+  <div id="footer">
+      <p class="copyright">&copy; 2020 | Jennifer Reinke</p>
+  </div>
+<!-- End Footer Section-->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+<!--Scripts ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/navbar.js"></script>
+<script>
+//Grid Filter Functions and fadebox_____________________
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
 </html>
+
