@@ -603,4 +603,10 @@ p.projectBody_text{
   }
 
 }
+  @media (orientation: landscape) {
+  #resume{
+    width:100%;
+    height:100%;
+  }
 
+}
