@@ -402,6 +402,7 @@ h4{
 
 #resume {
   width:100px;
+  max-width:100px!important;
   padding:15px;
   text-align:center;
   margin: 0 auto;
@@ -562,6 +563,12 @@ p.projectBody_text{
 
 /* PROJECT PAGES MEDIA QUERIES
 ================================*/
+@media screen and (max-width: 910px) {
+#non_screen{
+  display:block;
+  width:100%;
+  }
+}
 @media screen and (max-width: 900px) {
   #div-top{
   max-width:581px;
